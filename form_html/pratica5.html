@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Inscrição em Evento</title>
+</head>
+<body>
+
+<h2>Inscrição em Evento</h2>
+
+<form>
+
+    <label>Nome:</label>
+    <input type="text" name="nome" placeholder="Digite seu nome"
+           pattern="[A-Za-zÀ-ÿ ]{3,}" required>
+    <br><br>
+
+    <label>E-mail:</label>
+    <input type="email" name="email" placeholder="Digite seu e-mail" required>
+    <br><br>
+
+    <label>Telefone:</label>
+    <input type="tel" name="telefone" placeholder="Digite seu telefone"
+           pattern="[0-9]{10,11}" required>
+    <br><br>
+
+    <label>Cargo:</label>
+    <input type="text" name="cargo" placeholder="Digite seu cargo" required>
+    <br><br>
+
+    <label>Empresa:</label>
+    <input type="text" name="empresa" placeholder="Digite o nome da empresa" required>
+    <br><br>
+
+    <label>Data do Evento:</label>
+    <input type="date" name="data_evento" required>
+    <br><br>
+
+    <label>Horário de Chegada:</label>
+    <input type="time" name="horario" required>
+    <br><br>
+
+    <label>Alimentação Preferida:</label>
+    <select name="alimentacao" required>
+        <option value="">Selecione</option>
+        <option>Normal</option>
+        <option>Vegetariana</option>
+        <option>Vegana</option>
+        <option>Sem Glúten</option>
+        <option>Sem Lactose</option>
+    </select>
+    <br><br>
+
+    <label>Restrições Alimentares:</label>
+    <br>
+    <input type="checkbox" name="restricoes[]" value="Nenhuma" required> Nenhuma
+    <input type="checkbox" name="restricoes[]" value="Glúten"> Glúten
+    <input type="checkbox" name="restricoes[]" value="Lactose"> Lactose
+    <input type="checkbox" name="restricoes[]" value="Amendoim"> Amendoim
+    <input type="checkbox" name="restricoes[]" value="Frutos do Mar"> Frutos do Mar
+    <br><br>
+
+    <label>Necessidades Especiais:</label>
+    <br>
+    <input type="checkbox" name="necessidades[]" value="Nenhuma" required> Nenhuma
+    <input type="checkbox" name="necessidades[]" value="Acessibilidade"> Acessibilidade
+    <input type="checkbox" name="necessidades[]" value="Cadeira de Rodas"> Cadeira de Rodas
+    <input type="checkbox" name="necessidades[]" value="Intérprete"> Intérprete
+    <br><br>
+
+    <label>
+        <input type="checkbox" name="privacidade" required>
+        Aceito a Política de Privacidade
+    </label>
+    <br><br>
+
+    <label>
+        <input type="checkbox" name="atualizacoes">
+        Receber Atualizações sobre o Evento
+    </label>
+    <br><br>
+
+    <label>Nome do Acompanhante:</label>
+    <input type="text" name="nome_acompanhante" placeholder="Digite o nome do acompanhante">
+    <br><br>
+
+    <label>E-mail do Acompanhante:</label>
+    <input type="email" name="email_acompanhante" placeholder="Digite o e-mail do acompanhante">
+    <br><br>
+
+    <label>Telefone do Acompanhante:</label>
+    <input type="tel" name="telefone_acompanhante"
+           placeholder="Digite o telefone do acompanhante"
+           pattern="[0-9]{10,11}">
+    <br><br>
+
+    <label>Data de Nascimento:</label>
+    <input type="date" name="data_nascimento" required>
+    <br><br>
+
+    <label>Empresa do Acompanhante:</label>
+    <input type="text" name="empresa_acompanhante"
+           placeholder="Digite a empresa do acompanhante">
+    <br><br>
+
+    <label>Cargo do Acompanhante:</label>
+    <input type="text" name="cargo_acompanhante"
+           placeholder="Digite o cargo do acompanhante">
+    <br><br>
+
+    <label>Preferência de Assento:</label>
+    <select name="assento" required>
+        <option value="">Selecione</option>
+        <option>Janela</option>
+        <option>Corredor</option>
+        <option>Frente</option>
+        <option>Fundo</option>
+        <option>Sem preferência</option>
+    </select>
+    <br><br>
+
+    <label>Outras Informações Relevantes:</label>
+    <br>
+    <textarea name="informacoes"
+              placeholder="Digite outras informações relevantes"></textarea>
+    <br><br>
+
+    <button type="submit">Inscrever-se</button>
+
+</form>
+
+</body>
+</html>

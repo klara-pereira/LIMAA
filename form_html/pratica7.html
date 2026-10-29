@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Solicitação de Orçamento</title>
+
+    <style>
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #F4F7F4;
+        }
+
+        header {
+            background-color: #2E7D32;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        form {
+            padding: 20px;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        .obrigatorio {
+            color: red;
+        }
+
+        button {
+            background-color: #2E7D32;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        footer {
+            background-color: #2E7D32;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 30px;
+        }
+
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Solicitação de Orçamento</h1>
+</header>
+
+<form>
+
+    <label class="obrigatorio">Nome:</label>
+    <input type="text" name="nome" placeholder="Digite seu nome"
+           pattern="[A-Za-zÀ-ÿ ]{3,}" required>
+    <br><br>
+
+    <label class="obrigatorio">Empresa:</label>
+    <input type="text" name="empresa" placeholder="Digite o nome da empresa" required>
+    <br><br>
+
+    <label class="obrigatorio">E-mail:</label>
+    <input type="email" name="email" placeholder="Digite seu e-mail" required>
+    <br><br>
+
+    <label class="obrigatorio">Telefone:</label>
+    <input type="tel" name="telefone" placeholder="Digite seu telefone"
+           pattern="[0-9]{10,11}" required>
+    <br><br>
+
+    <label class="obrigatorio">Descrição do Projeto:</label>
+    <br>
+    <textarea name="descricao" placeholder="Descreva seu projeto" required></textarea>
+    <br><br>
+
+    <label class="obrigatorio">Prazo de Entrega Desejado:</label>
+    <input type="date" name="prazo" required>
+    <br><br>
+
+    <label class="obrigatorio">Orçamento Disponível:</label>
+    <input type="number" name="orcamento" placeholder="Digite o orçamento disponível"
+           min="0" step="0.01" required>
+    <br><br>
+
+    <label class="obrigatorio">Local de Entrega:</label>
+    <input type="text" name="local_entrega"
+           placeholder="Digite o local de entrega" required>
+    <br><br>
+
+    <label>Referência do Projeto Anterior:</label>
+    <input type="text" name="referencia"
+           placeholder="Digite uma referência de projeto anterior">
+    <br><br>
+
+    <label class="obrigatorio">Preferência de Contato:</label>
+    <select name="contato" required>
+        <option value="">Selecione</option>
+        <option>E-mail</option>
+        <option>Telefone</option>
+        <option>WhatsApp</option>
+    </select>
+    <br><br>
+
+    <label class="obrigatorio">
+        <input type="checkbox" name="termos" required>
+        Aceito os Termos e Condições
+    </label>
+    <br><br>
+
+    <label>
+        <input type="checkbox" name="novidades">
+        Receber Novidades por E-mail
+    </label>
+    <br><br>
+
+    <label class="obrigatorio">Nome do Responsável:</label>
+    <input type="text" name="responsavel"
+           placeholder="Digite o nome do responsável" required>
+    <br><br>
+
+    <label class="obrigatorio">Cargo do Responsável:</label>
+    <input type="text" name="cargo"
+           placeholder="Digite o cargo do responsável" required>
+    <br><br>
+
+    <label class="obrigatorio">Telefone do Responsável:</label>
+    <input type="tel" name="telefone_responsavel"
+           placeholder="Digite o telefone do responsável"
+           pattern="[0-9]{10,11}" required>
+    <br><br>
+
+    <label class="obrigatorio">Data de Início do Projeto:</label>
+    <input type="date" name="data_inicio" required>
+    <br><br>
+
+    <label class="obrigatorio">Número de Itens/Produtos:</label>
+    <input type="number" name="itens"
+           placeholder="Digite a quantidade"
+           min="1" required>
+    <br><br>
+
+    <label class="obrigatorio">Urgência:</label>
+    <select name="urgencia" required>
+        <option value="">Selecione</option>
+        <option>Baixa</option>
+        <option>Média</option>
+        <option>Alta</option>
+        <option>Urgente</option>
+    </select>
+    <br><br>
+
+    <label class="obrigatorio">Setor da Empresa:</label>
+    <select name="setor" required>
+        <option value="">Selecione</option>
+        <option>Administrativo</option>
+        <option>Financeiro</option>
+        <option>Comercial</option>
+        <option>TI</option>
+        <option>Produção</option>
+        <option>Marketing</option>
+        <option>Outro</option>
+    </select>
+    <br><br>
+
+    <label class="obrigatorio">Método de Pagamento Preferido:</label>
+    <select name="pagamento" required>
+        <option value="">Selecione</option>
+        <option>Pix</option>
+        <option>Cartão de Crédito</option>
+        <option>Cartão de Débito</option>
+        <option>Boleto</option>
+        <option>Transferência Bancária</option>
+    </select>
+    <br><br>
+
+    <button type="submit">Solicitar Orçamento</button>
+
+</form>
+
+<footer>
+    <p>© 2026 - Solicitação de Orçamento</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Reserva em Restaurante</title>
+</head>
+<body>
+
+<h2>Reserva em Restaurante</h2>
+
+<form>
+
+    <label>Nome:</label>
+    <input type="text" name="nome" placeholder="Digite seu nome" required>
+    <br><br>
+
+    <label>Sobrenome:</label>
+    <input type="text" name="sobrenome" placeholder="Digite seu sobrenome" required>
+    <br><br>
+
+    <label>E-mail:</label>
+    <input type="email" name="email" placeholder="Digite seu e-mail" required>
+    <br><br>
+
+    <label>Telefone:</label>
+    <input type="tel" name="telefone" required>
+    <br><br>
+
+    <label>Número de Pessoas:</label>
+    <input type="number" name="pessoas" required>
+    <br><br>
+
+    <label>Data da Reserva:</label>
+    <input type="date" name="data" required>
+    <br><br>
+
+    <label>Horário da Reserva:</label>
+    <input type="time" name="horario" required>
+    <br><br>
+
+    <label>Preferências Alimentares:</label>
+    <br>
+    <input type="checkbox" name="preferencias[]" value="Vegetariano" required> Vegetariano
+    <input type="checkbox" name="preferencias[]" value="Vegano"> Vegano
+    <input type="checkbox" name="preferencias[]" value="Sem Glúten"> Sem Glúten
+    <input type="checkbox" name="preferencias[]" value="Sem Lactose"> Sem Lactose
+    <br><br>
+
+    <label>Restrições Alimentares:</label>
+    <br>
+    <input type="checkbox" name="restricoes[]" value="Amendoim" required> Amendoim
+    <input type="checkbox" name="restricoes[]" value="Frutos do Mar"> Frutos do Mar
+    <input type="checkbox" name="restricoes[]" value="Lactose"> Lactose
+    <input type="checkbox" name="restricoes[]" value="Glúten"> Glúten
+    <br><br>
+
+    <label>Comentários Adicionais:</label>
+    <br>
+    <textarea name="comentarios" placeholder="Digite seus comentários adicionais"></textarea>
+    <br><br>
+
+    <label>Tipo de Evento:</label>
+    <select name="evento" required>
+        <option value="">Selecione</option>
+        <option>Aniversário</option>
+        <option>Casamento</option>
+        <option>Jantar</option>
+        <option>Reunião</option>
+        <option>Outro</option>
+    </select>
+    <br><br>
+
+    <label>Necessidades Especiais:</label>
+    <br>
+    <input type="checkbox" name="necessidades[]" value="Acessibilidade" required> Acessibilidade
+    <input type="checkbox" name="necessidades[]" value="Cadeira para bebê"> Cadeira para bebê
+    <input type="checkbox" name="necessidades[]" value="Espaço para cadeira de rodas"> Espaço para cadeira de rodas
+    <br><br>
+
+    <label>Preferência de Assento:</label>
+    <select name="assento" required>
+        <option value="">Selecione</option>
+        <option>Interior</option>
+        <option>Área externa</option>
+        <option>Próximo à janela</option>
+        <option>Qualquer lugar</option>
+    </select>
+    <br><br>
+
+    <label>Código Promocional:</label>
+    <input type="text" name="codigo" required>
+    <br><br>
+
+    <label>
+        <input type="checkbox" name="termos">
+        Aceitar Termos e Condições
+    </label>
+    <br><br>
+
+    <label>
+        <input type="checkbox" name="notificacoes" required>
+        Receber Notificações
+    </label>
+    <br><br>
+
+    <label>Cidade:</label>
+    <input type="text" name="cidade" placeholder="Digite sua cidade" required>
+    <br><br>
+
+    <label>CEP:</label>
+    <input type="text" name="cep" placeholder="Digite seu CEP" required>
+    <br><br>
+
+    <label>País:</label>
+    <select name="pais" required>
+        <option value="">Selecione</option>
+        <option>Brasil</option>
+        <option>Argentina</option>
+        <option>Chile</option>
+        <option>Estados Unidos</option>
+        <option>Portugal</option>
+        <option>Outro</option>
+    </select>
+    <br><br>
+
+    <label>Referência:</label>
+    <input type="text" name="referencia" placeholder="Digite uma referência">
+    <br><br>
+
+    <button type="submit">Fazer Reserva</button>
+
+</form>
+
+</body>
+</html>

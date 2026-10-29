@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Solicitação de Orçamento</title>
+</head>
+<body>
+
+<h2>Solicitação de Orçamento</h2>
+
+<form>
+
+    <label>Nome:</label>
+    <input type="text" name="nome" placeholder="Digite seu nome"
+           pattern="[A-Za-zÀ-ÿ ]{3,}" required>
+    <br><br>
+
+    <label>Empresa:</label>
+    <input type="text" name="empresa" placeholder="Digite o nome da empresa" required>
+    <br><br>
+
+    <label>E-mail:</label>
+    <input type="email" name="email" placeholder="Digite seu e-mail" required>
+    <br><br>
+
+    <label>Telefone:</label>
+    <input type="tel" name="telefone" placeholder="Digite seu telefone"
+           pattern="[0-9]{10,11}" required>
+    <br><br>
+
+    <label>Descrição do Projeto:</label>
+    <br>
+    <textarea name="descricao" placeholder="Descreva seu projeto" required></textarea>
+    <br><br>
+
+    <label>Prazo de Entrega Desejado:</label>
+    <input type="date" name="prazo" required>
+    <br><br>
+
+    <label>Orçamento Disponível:</label>
+    <input type="number" name="orcamento" placeholder="Digite o orçamento disponível"
+           min="0" step="0.01" required>
+    <br><br>
+
+    <label>Local de Entrega:</label>
+    <input type="text" name="local_entrega"
+           placeholder="Digite o local de entrega" required>
+    <br><br>
+
+    <label>Referência do Projeto Anterior:</label>
+    <input type="text" name="referencia"
+           placeholder="Digite uma referência de projeto anterior">
+    <br><br>
+
+    <label>Preferência de Contato:</label>
+    <select name="contato" required>
+        <option value="">Selecione</option>
+        <option>E-mail</option>
+        <option>Telefone</option>
+        <option>WhatsApp</option>
+    </select>
+    <br><br>
+
+    <label>
+        <input type="checkbox" name="termos" required>
+        Aceito os Termos e Condições
+    </label>
+    <br><br>
+
+    <label>
+        <input type="checkbox" name="novidades">
+        Receber Novidades por E-mail
+    </label>
+    <br><br>
+
+    <label>Nome do Responsável:</label>
+    <input type="text" name="responsavel"
+           placeholder="Digite o nome do responsável" required>
+    <br><br>
+
+    <label>Cargo do Responsável:</label>
+    <input type="text" name="cargo"
+           placeholder="Digite o cargo do responsável" required>
+    <br><br>
+
+    <label>Telefone do Responsável:</label>
+    <input type="tel" name="telefone_responsavel"
+           placeholder="Digite o telefone do responsável"
+           pattern="[0-9]{10,11}" required>
+    <br><br>
+
+    <label>Data de Início do Projeto:</label>
+    <input type="date" name="data_inicio" required>
+    <br><br>
+
+    <label>Número de Itens/Produtos:</label>
+    <input type="number" name="itens" placeholder="Digite a quantidade"
+           min="1" required>
+    <br><br>
+
+    <label>Urgência:</label>
+    <select name="urgencia" required>
+        <option value="">Selecione</option>
+        <option>Baixa</option>
+        <option>Média</option>
+        <option>Alta</option>
+        <option>Urgente</option>
+    </select>
+    <br><br>
+
+    <label>Setor da Empresa:</label>
+    <select name="setor" required>
+        <option value="">Selecione</option>
+        <option>Administrativo</option>
+        <option>Financeiro</option>
+        <option>Comercial</option>
+        <option>TI</option>
+        <option>Produção</option>
+        <option>Marketing</option>
+        <option>Outro</option>
+    </select>
+    <br><br>
+
+    <label>Método de Pagamento Preferido:</label>
+    <select name="pagamento" required>
+        <option value="">Selecione</option>
+        <option>Pix</option>
+        <option>Cartão de Crédito</option>
+        <option>Cartão de Débito</option>
+        <option>Boleto</option>
+        <option>Transferência Bancária</option>
+    </select>
+    <br><br>
+
+    <button type="submit">Solicitar Orçamento</button>
+
+</form>
+
+</body>
+</html>

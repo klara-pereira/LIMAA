@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Registro de Usuário</title>
+</head>
+<body>
+
+<h2>Registro de Usuário</h2>
+
+<form>
+
+    <label>Nome:</label>
+    <input type="text" name="nome" placeholder="Digite seu nome" required>
+    <br><br>
+
+    <label>Sobrenome:</label>
+    <input type="text" name="sobrenome" placeholder="Digite seu sobrenome" required>
+    <br><br>
+
+    <label>Data de Nascimento:</label>
+    <input type="date" name="data_nascimento" required>
+    <br><br>
+
+    <label>Gênero:</label>
+    <input type="radio" name="genero" value="Masculino" required> Masculino
+    <input type="radio" name="genero" value="Feminino"> Feminino
+    <input type="radio" name="genero" value="Outro"> Outro
+    <br><br>
+
+    <label>E-mail:</label>
+    <input type="email" name="email" placeholder="Digite seu e-mail" required>
+    <br><br>
+
+    <label>Telefone:</label>
+    <input type="tel" name="telefone" placeholder="Digite seu telefone" required>
+    <br><br>
+
+    <label>Endereço:</label>
+    <input type="text" name="endereco" placeholder="Digite seu endereço">
+    <br><br>
+
+    <label>Cidade:</label>
+    <input type="text" name="cidade" placeholder="Digite sua cidade" required>
+    <br><br>
+
+    <label>Estado:</label>
+    <select name="estado" required>
+        <option value="">Selecione seu estado</option>
+        <option>AC</option>
+        <option>AL</option>
+        <option>AP</option>
+        <option>AM</option>
+        <option>BA</option>
+        <option>CE</option>
+        <option>DF</option>
+        <option>ES</option>
+        <option>GO</option>
+        <option>MA</option>
+        <option>MT</option>
+        <option>MS</option>
+        <option>MG</option>
+        <option>PA</option>
+        <option>PB</option>
+        <option>PR</option>
+        <option>PE</option>
+        <option>PI</option>
+        <option>RJ</option>
+        <option>RN</option>
+        <option>RS</option>
+        <option>RO</option>
+        <option>RR</option>
+        <option>SC</option>
+        <option>SP</option>
+        <option>SE</option>
+        <option>TO</option>
+    </select>
+    <br><br>
+
+    <label>CEP:</label>
+    <input type="text" name="cep" placeholder="Digite seu CEP" required>
+    <br><br>
+
+    <label>Nome de Usuário:</label>
+    <input type="text" name="usuario" placeholder="Digite seu nome de usuário" required>
+    <br><br>
+
+    <label>Senha:</label>
+    <input type="password" name="senha" required>
+    <br><br>
+
+    <label>Confirmação de Senha:</label>
+    <input type="password" name="confirmacao_senha" required>
+    <br><br>
+
+    <label>Foto de Perfil:</label>
+    <input type="file" name="foto">
+    <br><br>
+
+    <label>Hobbies:</label>
+    <br>
+    <input type="checkbox" name="hobbies[]" value="Música" required> Música
+    <input type="checkbox" name="hobbies[]" value="Esportes"> Esportes
+    <input type="checkbox" name="hobbies[]" value="Leitura"> Leitura
+    <input type="checkbox" name="hobbies[]" value="Jogos"> Jogos
+    <input type="checkbox" name="hobbies[]" value="Viagens"> Viagens
+    <br><br>
+
+    <label>Nível de Educação:</label>
+    <select name="educacao" required>
+        <option value="">Selecione</option>
+        <option>Ensino Fundamental</option>
+        <option>Ensino Médio</option>
+        <option>Ensino Superior</option>
+        <option>Pós-graduação</option>
+    </select>
+    <br><br>
+
+    <label>Profissão:</label>
+    <input type="text" name="profissao" placeholder="Digite sua profissão">
+    <br><br>
+
+    <label>Biografia:</label>
+    <br>
+    <textarea name="biografia" placeholder="Escreva uma breve biografia"></textarea>
+    <br><br>
+
+    <input type="checkbox" name="termos" required>
+    <label>Aceito os Termos e Condições</label>
+    <br><br>
+
+    <input type="checkbox" name="notificacoes">
+    <label>Receber Notificações</label>
+    <br><br>
+
+    <button type="submit">Cadastrar</button>
+
+</form>
+
+</body>
+</html>

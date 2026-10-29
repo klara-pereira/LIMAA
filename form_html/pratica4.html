@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Inscrição em Curso</title>
+</head>
+<body>
+
+<h2>Inscrição em Curso</h2>
+
+<form>
+
+    <label>Nome:</label>
+    <input type="text" name="nome" placeholder="Digite seu nome"
+           pattern="[A-Za-zÀ-ÿ ]{3,}" required>
+    <br><br>
+
+    <label>E-mail:</label>
+    <input type="email" name="email" placeholder="Digite seu e-mail" required>
+    <br><br>
+
+    <label>Telefone:</label>
+    <input type="tel" name="telefone" placeholder="Digite seu telefone"
+           pattern="[0-9]{10,11}" required>
+    <br><br>
+
+    <label>Endereço:</label>
+    <input type="text" name="endereco" placeholder="Digite seu endereço">
+    <br><br>
+
+    <label>Data de Nascimento:</label>
+    <input type="date" name="data_nascimento" required>
+    <br><br>
+
+    <label>Gênero:</label>
+    <input type="radio" name="genero" value="Masculino" required> Masculino
+    <input type="radio" name="genero" value="Feminino"> Feminino
+    <input type="radio" name="genero" value="Outro"> Outro
+    <br><br>
+
+    <label>Escolaridade:</label>
+    <select name="escolaridade" required>
+        <option value="">Selecione</option>
+        <option>Ensino Fundamental</option>
+        <option>Ensino Médio</option>
+        <option>Ensino Superior</option>
+        <option>Pós-graduação</option>
+    </select>
+    <br><br>
+
+    <label>Profissão:</label>
+    <input type="text" name="profissao" placeholder="Digite sua profissão">
+    <br><br>
+
+    <label>Experiência Anterior:</label>
+    <textarea name="experiencia" placeholder="Descreva sua experiência anterior"></textarea>
+    <br><br>
+
+    <label>Motivação para o Curso:</label>
+    <textarea name="motivacao" placeholder="Por que deseja fazer o curso?" required></textarea>
+    <br><br>
+
+    <label>Expectativas:</label>
+    <textarea name="expectativas" placeholder="Quais são suas expectativas?" required></textarea>
+    <br><br>
+
+    <label>
+        <input type="checkbox" name="termos" required>
+        Aceito os Termos e Condições
+    </label>
+    <br><br>
+
+    <label>
+        <input type="checkbox" name="novidades">
+        Receber Novidades por E-mail
+    </label>
+    <br><br>
+
+    <label>Nível de Conhecimento em Informática:</label>
+    <select name="informatica" required>
+        <option value="">Selecione</option>
+        <option>Básico</option>
+        <option>Intermediário</option>
+        <option>Avançado</option>
+    </select>
+    <br><br>
+
+    <label>Disponibilidade de Horário:</label>
+    <select name="horario" required>
+        <option value="">Selecione</option>
+        <option>Manhã</option>
+        <option>Tarde</option>
+        <option>Noite</option>
+        <option>Integral</option>
+    </select>
+    <br><br>
+
+    <label>Referência de Amigos:</label>
+    <input type="text" name="referencia" placeholder="Nome do amigo">
+    <br><br>
+
+    <label>Hobbies:</label>
+    <br>
+    <input type="checkbox" name="hobbies[]" value="Música"> Música
+    <input type="checkbox" name="hobbies[]" value="Esportes"> Esportes
+    <input type="checkbox" name="hobbies[]" value="Leitura"> Leitura
+    <input type="checkbox" name="hobbies[]" value="Jogos"> Jogos
+    <input type="checkbox" name="hobbies[]" value="Viagens"> Viagens
+    <br><br>
+
+    <label>Estado Civil:</label>
+    <select name="estado_civil" required>
+        <option value="">Selecione</option>
+        <option>Solteiro(a)</option>
+        <option>Casado(a)</option>
+        <option>Divorciado(a)</option>
+        <option>Viúvo(a)</option>
+    </select>
+    <br><br>
+
+    <label>Idiomas que Fala:</label>
+    <br>
+    <input type="checkbox" name="idiomas[]" value="Português" required> Português
+    <input type="checkbox" name="idiomas[]" value="Inglês"> Inglês
+    <input type="checkbox" name="idiomas[]" value="Espanhol"> Espanhol
+    <input type="checkbox" name="idiomas[]" value="Francês"> Francês
+    <br><br>
+
+    <label>Método de Pagamento Preferido:</label>
+    <select name="pagamento" required>
+        <option value="">Selecione</option>
+        <option>Cartão de Crédito</option>
+        <option>Cartão de Débito</option>
+        <option>Pix</option>
+        <option>Boleto</option>
+    </select>
+    <br><br>
+
+    <label>Outras Observações:</label>
+    <textarea name="observacoes" placeholder="Digite outras observações"></textarea>
+    <br><br>
+
+    <button type="submit">Inscrever-se</button>
+
+</form>
+
+</body>
+</html>
