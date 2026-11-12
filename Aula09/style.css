@@ -1,0 +1,57 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 1500px;
+}
+
+.cabecalho{
+    width: 100%;
+    background-color:palevioletred;
+    color: white;
+    padding: 5px;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+}
+
+.botaoZap{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 20px;
+    background-color:green;
+    color: white;
+    border-radius: 50px;
+    text-decoration: none;
+}
+
+.container{
+    width: 400px;
+    height: 400px;
+    background-color: pink;
+    margin-top: 100px;
+    position: relative;
+    left: 200px;
+    top: 200px;
+    margin-bottom: 250px;
+
+}
+
+.box{
+    width: 200px;
+    height: 200px;
+    background-color: palevioletred;
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+}
+
+.caixa{
+    width: 200px;
+    height: 200px;
+    background-color: pink;
+    color: white;
+    float: right;
+}
